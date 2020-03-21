@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Undoing defaults */
+body,
+.body {
+  transition: width 750ms, margin 750ms;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* ---------- */
+.body {
+  margin: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  color: #1e1e1e;
+  font-size: 10px;
+  background: linear-gradient(#f0f0f0, #ffffff);
+}
+
+.text {
+  margin: 20px 25px;
+}
+
+h1 {
+  color: #015759;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  color: #015759;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+}
+
+/* Navigation */
+nav {
+  background-color: #1e1e1e;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin-left: -4px;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+  a {
+    display: block;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 14px 26px;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 250ms;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: #015759;
+  }
+}
+
+.nav {
+  display: block;
+}
+
+.nav_l {
+  display: none;
+}
+
+/* MaxG Logo */
+.MaxG {
+  height: 30px;
+  width: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MaxG_l {
+  height: 60px;
+  width: auto;
+  display: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text */
+.text-grid {
+  display: grid;
+  grid-template: auto / 1fr;
+  margin: 0 -15px;
+
+  li {
+    padding: 0 15px;
+  }
+}
+
+/* Art List */
+.art-list {
+  margin: 0px -4px -4px;
+  display: grid;
+  grid-template: auto / 1fr;
+}
+
+figure {
+  padding: 0px 4px;
+  position: relative;
+
+  img {
+    padding: 0px 0px 4px;
+  }
+}
+
+figcaption {
+  background-color: hsla(0, 0%, 12%, 0.75);
+  color: white;
+  position: absolute;
+  bottom: 13px;
+  right: 9px;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.main-content {
+  padding-bottom: 20px;
+  overflow-x: hidden;
+}
+
+/* BOPA logo */
+.bmore {
+  height: auto;
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.footer {
+  border-top: 0.5px silver solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+.footer-text {
+  margin: 15px;
+}
+
+/* Tablet */
+@media screen and (min-width: 500px) {
+  .nav {
+    display: none;
+  }
+
+  .nav_l {
+    display: block;
+  }
+
+  .MaxG {
+    display: none;
+  }
+
+  .MaxG_l {
+    display: block;
+    height: 45px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .art-list {
+    grid-template: repeat(3, auto) / repeat(3, auto);
+  }
+
+  body {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .text {
+    margin: 30px 40px;
+  }
+
+  .footer-text {
+    margin: 30px;
+  }
+
+  .bmore {
+    width: 300px;
+    margin-left: -14px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .body {
+    max-width: 888px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .text {
+    margin: 50px 45px;
+  }
+
+  .text-grid {
+    grid-template: auto / auto auto;
+  }
+
+  .footer-text {
+    margin: 50px 35px;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    max-width: 1080px;
+    margin: auto;
+  }
+}
